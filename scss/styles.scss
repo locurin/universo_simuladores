@@ -1,0 +1,1735 @@
+/* INDICE  DE ESTILOS:
+
+* Fonts agregadas --------------------------- LINEA 12
+* Animaciones creadas ----------------------- LINEA 12
+* Modificaciones a elements de Bootstrap ---- LINEA 12
+* Estilos Mobile First ---------------------- LINEA 12
+	*Body, Nav, Footer ------------------
+	*inicio.html ------------------------
+	*capitulos.html ---------------------
+	*personajes.html --------------------
+	*historia.html ----------------------
+	*juegos.html ------------------------
+	*ineditos.html ----------------------
+* Estilos Mobile Landscape ------------------ LINEA 12
+* Estilos Mobile muy pequeños --------------- LINEA 12
+* Estilos Tablet ---------------------------- LINEA 12
+* Estilos Tablet Landscape ------------------ LINEA 12
+* Estilos Desktop --------------------------- LINEA 12
+
+*/
+
+
+
+/* ------------------------- fonts -------------------------------- */
+@font-face {
+	font-family: los_simuladores;
+	src: url('../fonts/futura/futura-webfont.woff2') format('woff2'), url('../fonts/futura/futura-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+/* -----------------------animations------------------------------ */
+@keyframes "recibidor" {
+	0% {
+		opacity: 0;
+	}
+	25% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes "rotation" {
+	0% {
+	  transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(45deg);
+	}
+	100% {
+	  transform: rotate(0deg);
+	}
+}
+
+@keyframes "rotation2" {
+	0% {
+	  transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(-45deg);
+	}
+	100% {
+	  transform: rotate(0deg);
+	}
+}
+
+@keyframes type {
+	0% {
+	  width: 0;
+	}
+	99.9% {
+	  border-right: .15em solid #0b9206;
+	}
+	100% {
+	  border: none;
+	}
+  }
+  
+  @-webkit-keyframes type {
+	0% {
+	  width: 0;
+	}
+	99.9% {
+	  border-right: .15em solid #0b9206;
+	}
+	100% {
+	  border: none;
+	}
+  }
+  
+  @keyframes type2 {
+	0% {
+	  width: 0;
+	}
+	1% {
+	  opacity: 1;
+	}
+	99.9% {
+	  border-right: .15em solid #0b9206;
+	}
+	100% {
+	  opacity: 1;
+	  border: none;
+	}
+  }
+  
+  @-webkit-keyframes type2 {
+	0% {
+	  width: 0;
+	}
+	1% {
+	  opacity: 1;
+	}
+	99.9% {
+	  border-right: .15em solid #0b9206;
+	}
+	100% {
+	  opacity: 1;
+	  border: none;
+	}
+  }
+  
+  @keyframes type3 {
+	0% {
+	  width: 0;
+	}
+	1% {
+	  opacity: 1;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  
+  @-webkit-keyframes type3 {
+	0% {
+	  width: 0;
+	}
+	1% {
+	  opacity: 1;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  
+  @keyframes blink {
+	50% {
+	  border-color: transparent;
+	}
+  }
+  @-webkit-keyframes blink {
+	50% {
+	  border-color: tranparent;
+	}
+  }
+
+  @-webkit-keyframes boton {
+	0% {
+	  opacity: 0;
+	}
+	50% {
+	  opacity: 0.5;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+
+  @keyframes boton {
+	0% {
+	  opacity: 0;
+	}
+	50% {
+	  opacity: 0.5;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+
+/* ----------------------- bootstrap 5 mods ----------------------------- */
+.navbar-light {
+    background-color: inherit;
+}
+
+.btn-lg {
+	width: 300px;
+}
+
+/* ----------------------- web body ----------------------------- */
+
+/* --------- mobile portrait  ------------------ */
+
+/* SECTION - generales: body, header, nav, footer*/
+
+    /*body*/
+    * {
+        border: 0;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: auto;
+        width: 100%;
+        color: #333;
+        background-image: linear-gradient(to top, #5c8bbd, #fafafa);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+		font-family: "los_simuladores"!important;
+    }
+
+    /*header*/
+    header {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+    }
+    #navbar_ul {
+        margin-top: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #logo_header {
+        max-height: 55px;
+        width: 115%;
+		margin: -8px -12px -7px -12px;
+    }
+    #toggle_btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 5%;
+        margin-top: 2%;
+        background-color: gray;
+        opacity: 0.5;
+    }
+    #navbarSupportedContent {
+        background-color: #fafafa;
+        margin-top: 2%;
+        margin-right: 2%;
+        border-radius: 5%;
+    }
+    #navbar_submenu {
+        background-color: #fafafa;
+		border-color: transparent;
+		li a {
+			background-color: inherit;
+			margin-left: 20px;
+		}
+    }
+
+    /*footer*/
+    footer {
+        height: 50px;
+        width: 100%;
+        background-color: #333;
+        overflow-y: hidden;
+        margin-top: auto;
+        p {
+            color: #fafafa;
+            text-align: center;
+            line-height: 50px;
+            a {
+                text-decoration: none;
+                color:  inherit;
+            }
+            span {
+                display: none;
+            }
+        }
+    }
+
+
+/* SECTION - inicio.html */
+
+	/*main*/
+	#main_index {
+		width: 100%;
+		height: 100vh;
+		background-image: url("../images/banners/indexFondo2.jpg");
+		background-size: cover;
+		font-family: 'Special Elite', cursive!important;
+		color: #0b9206;
+		font-weight: bolder;
+		font-size: 30px!important;
+		overflow: hidden;
+		section {
+			margin-top: 25%;
+			text-align: center;
+			p {
+				-webkit-text-stroke: 0.5px black;
+				border-right: .15em solid #0b9206;
+				font-family: "Courier";
+				white-space: nowrap;
+				overflow: hidden;
+				&:nth-child(1) {
+					width: 100%;
+					-webkit-animation: type 2s steps(40, end);
+					animation: type 2s steps(40, end);
+					-webkit-animation-fill-mode: forwards;
+					animation-fill-mode: forwards;
+				}
+				
+				&:nth-child(2) {
+						width: 100%;
+						opacity: 0;
+						-webkit-animation: type2 2s steps(40, end);
+						animation: type2 2s steps(40, end);
+						-webkit-animation-delay: 2s;
+						animation-delay: 2s;
+						-webkit-animation-fill-mode: forwards;
+						animation-fill-mode: forwards;
+					}
+
+					&:nth-child(3) {
+						width: 100%;
+						opacity: 0;
+						-webkit-animation: type2 2s steps(40, end);
+						animation: type2 2s steps(40, end);
+						-webkit-animation-delay: 4s;
+						animation-delay: 4s;
+						-webkit-animation-fill-mode: forwards;
+						animation-fill-mode: forwards;
+					}
+				
+				&:nth-child(4) {
+						width: 100%;
+						opacity: 0;
+						-webkit-animation: type2 2s steps(40, end);
+						animation: type2 2s steps(40, end);
+						-webkit-animation-delay: 6s;
+						animation-delay: 6s;
+						-webkit-animation-fill-mode: forwards;
+						animation-fill-mode: forwards;
+						margin-bottom: 40%;
+					}
+			}
+			a {
+				button {
+					opacity: 0;
+					font-family: los_simuladores!important;
+					animation: boton 2s forwards;
+					-webkit-animation: boton 2s forwards;
+					animation-delay: 8s;
+				}
+				
+
+			}
+		}
+	}
+
+
+/* SECTION - inicio.html */
+
+/*main*/
+#main_inicio {
+	margin: 52px 3% 10px 3%;
+	display: grid;
+	grid-template-areas: "banner" "recibidor" "personajes" "contenido_extra" "capitulos";
+	grid-template-rows: auto;
+	grid-template-columns: 100%;
+	grid-column-gap: 10px;
+	grid-row-gap: 30px;
+}
+.main_inicio_child {
+	height: auto;
+	width: 100%;
+}
+
+
+/*recibidor*/
+#recibidor_img_container {
+	grid-area: banner;
+	max-width: 100%;
+	animation-name: recibidor;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	text-align: center;
+	font-family: los_simuladores;
+	margin-top: 0;
+	img {
+		max-width: 100%;
+	}
+}
+#navegar_sitio_btn_2 {
+	display: none;
+}
+#recibidor {
+	grid-area: recibidor;
+	text-align: center;
+	margin-top: -10%;
+}
+#recibidor_logo {
+	animation-name: recibidor;
+	animation-duration: 2s;
+	h1 {
+		margin-top: -3%;
+		font-size: 50px;
+	}
+	h3 {
+		font-size: 35px;
+		span {
+			font-weight: bolder;
+			color: #28b823;
+		}
+	}
+}
+#recibidor_texto {
+	animation-name: recibidor;
+	animation-duration: 3s;
+	p {
+		text-align: justify;
+	}
+}
+#navegar_sitio_btn {
+	margin-top: 1%;
+	a {
+		text-decoration: none;
+		color: #fafafa;
+	}
+}
+
+/*personajes*/
+#personajes {
+	text-align: center;
+	grid-area: personajes;
+	height: auto;
+}
+#personajes_grid {
+	display: grid;
+	grid-template-areas: "personaje_1" "personaje_2" "personaje_3" "personaje_4";
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column-gap: 5px;
+}
+
+.personajes_child {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    a {
+		img {
+            max-width: 100%;
+            max-height: 40vh;
+            border-radius: 25px;
+        }
+	}
+}
+
+    /*contenidos extra*/
+    #ver_contenidos {
+        grid-area: contenido_extra;
+        border-radius: 50px;
+        h1 {
+            text-align: center;
+        }
+    }
+    #card_contenidos {
+        border: 0;
+    }
+    #hidden_span {
+        visibility: hidden;
+    }
+    #contenidos {
+        a {
+            text-align: justify;
+            display: list-item;
+            margin-left: 5px;
+            text-decoration: none;
+            color: #333;
+        }
+    }
+    #autor_de_cita {
+        text-align: right;
+        margin-right: 20%;
+        list-style-type: none;
+    }
+
+    #seguinos {
+        display: block;
+		text-align: center;
+		h1 {
+			margin-top: 20px;
+			font-size: 50px;
+		}
+		div {
+			display: flex;
+			justify-content: space-around;
+		}
+    }
+
+	.logo_red {
+		height: 50px;
+		width: 50px;
+	}
+
+    /*capítulos*/
+    #capitulos {
+        grid-area: capitulos;
+        text-align: center;
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5%;
+        }
+    }
+
+/* SECTION - capitulos.html */
+
+	/*main*/
+
+	#main_capitulos {
+		width: 100%;
+		height: auto;
+		margin-top: 50px;
+		h1 {
+			text-align: center;
+			margin-top: 20px;
+		}
+		p {
+			text-align: center;
+		}
+	}
+
+	/*tablas de episodios*/
+
+	.temporada {
+		h2 {
+			text-align: center;
+			margin-top: 20px;
+		}
+		margin-bottom: 40px;
+	}
+
+	.capitulo {
+		height: auto;
+		display: flex;
+		margin: 10px 5% 10px 5%;
+	}
+
+	.capitulo_img {
+		display: none;
+	}
+
+ 	.capitulo_info {
+		 width: 100%;
+		display: grid; 
+		grid-template-areas: 
+		"episodeNum" 
+		"summary" 
+		"watchOnline";
+		grid-template-rows: auto;
+		grid-template-columns: 100%;
+	}
+
+	.capitulo_titulo {
+		width: 100%;
+		grid-area: episodeNum;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		border-radius: 30px;
+		background-color: #eee;
+		color: #333;
+		cursor: pointer;
+		padding: 18px;
+		text-align: left;
+		border: none;
+		outline: none;
+		transition: 0.4s;
+		li {
+			list-style-type: none;
+			text-align: center;
+		}
+		&:hover {
+			background-color: #ccc;
+		}
+		&:after {
+			content: '\02795'; /* Unicode character for "plus" sign (+) */
+			color: #333;
+			float: right;
+			margin-left: 5px;
+		}
+	}
+
+	.active {
+		background-color: #ccc;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+		&:after {
+			content: "\2796";
+		}
+	}
+
+	.capitulo_resumen {
+		grid-area: summary;
+		text-align: justify;
+		padding: 0 18px;
+		background-color: white;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+		border-bottom-right-radius: 30px;
+		border-bottom-left-radius: 30px;
+		p {
+			text-align: justify!important;
+		}
+		a {
+			text-decoration: none;
+			color: #333;
+		}
+	}
+
+	.capitulo_resumen_primerEmision {
+		margin-top: 3%;
+	}
+
+	.capitulo_ver_online {
+		grid-area: watchOnline;
+		margin-bottom: 20px;
+		div {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			a img {
+				margin-top: 5px;
+				height: 50px;
+				width: 60px;
+			}
+		}
+	}
+
+
+/* SECTION - personajes.html */
+
+	/*main*/
+
+	#main_personajes {
+		width: 100%;
+		margin-top: 70px;
+		article {
+			h1 {
+				text-align: center;
+				text-decoration: underline;
+				text-decoration-color: #28b823;
+			}
+			p {
+				text-align: justify;
+				margin: 0 5% 20px 5%;
+			}
+		}
+	}
+
+	/*burbujas de personajes*/
+
+	.seccionPersonajes {
+		margin: 0 2% 20px 2%;
+	}
+
+	#personajes_grid_burbujas {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-column-gap: 5px;
+	}
+
+	.bonusTrack {
+		grid-template-columns: 1fr;
+	}
+
+	
+	.personajes_child_burbuja {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		color: #fafafa;
+		margin-bottom: 10px;
+		a {
+			img {
+				width: 85px;
+				height: 85px;
+				border-radius: 50%;
+				&:hover {
+					animation: rotation2 1s linear;
+				}
+			}
+		}
+	}
+
+	
+
+	.antiClockwiseSpin {
+		a {
+			img {
+				&:hover {
+					animation: rotation 1s linear!important;
+				}
+			}
+		}
+	}
+
+	.escalarEnVezDeRotar {
+		&:hover {
+			transform: scale(1.1);
+		}
+		a {
+			img {
+				&:hover {
+					animation: none;
+				}
+			}
+		}
+		
+	}
+
+/* SECTION - <nombre del personaje>.html */
+
+	/*personaje*/
+
+	.personajeInfo_header {
+		img {
+			width: 100%;
+			height: auto;
+			margin-top: -15px;
+		}
+		button {
+			display: none;
+		}
+	}
+
+	.personajeInfo_container {
+		margin-top: 20px;
+	}
+
+	.personaje_fotoLateral {
+		display: none;
+	}
+
+	.personajeInfo_texto {
+		summary {
+			margin: 0 5% 20px 5%;
+			text-align: justify;
+			list-style-type: none;
+		}
+		div {
+			img {
+				
+				margin-right: 5%;
+				width: 100%;
+				height: 200px;
+				margin-bottom: 20px;
+			}
+			h2 {
+				margin-top: 20px;
+				margin-left: 5%;
+			}
+			blockquote {
+				margin: 10px 5% 10px 5%;
+				font-style: italic;
+				text-align: justify;
+			}
+			hr {
+				margin: 10px 5% 10px 5%;
+			}
+		}
+	}
+
+	.personajeInfo_texto_cita {
+		font-size: 20px;
+		font-style: italic;
+		text-align: center!important;
+		margin-top: 20px;
+	}
+
+	.personajeInfo_texto_ficha {
+		margin: 0 5% 20px 5%;
+		text-align: justify;
+		a {
+			text-decoration: none;
+			color: #28b823;
+		}
+		h2 {
+			text-align: center;
+		}
+	}
+
+	.personaje_separador {
+		color: #06a800;
+		height: 3px!important;
+	}
+
+
+	/*volver a todos los personajes*/
+
+	.volverAVerTodos {
+		margin: 50px 5% 20px 5%;
+		text-align: center;
+		button {
+			a {
+				text-decoration: none;
+				color: #fafafa;
+			}
+		}
+	}
+
+/* SECTION - juegos.html */
+
+	/*main*/
+	#main_juegos {
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		img {
+			margin-top: 30%;
+			max-width: 100%;
+		}
+		h1 {
+			margin-top: 5%;
+		}
+		button {
+			margin-top: 15%;
+			width: 40%!important;
+			a {
+				color: white;
+				text-decoration: none;
+				&:hover {
+					color: white;
+				}
+			}
+		}
+	}
+
+/* SECTION - extra.html */
+
+	/*main*/
+	#main_extras {
+		width: 100%;
+		height: auto;
+		margin-top: 20%;
+		h1 {
+			text-align: center;
+		}
+		p, hr {
+			margin-left: 5%;
+			margin-right: 5%;
+			text-align: justify;
+		}
+	}
+
+	/*articulos*/
+	.contenidoExtra {
+		margin-top: 5%;
+		margin-bottom: 5%;
+		
+		h2 {
+			text-align: center;
+		}
+	}
+
+	.contenidoExtra_info {
+		a {
+			color: #06a800;
+			text-decoration: none;
+		}
+	}
+
+	.contenidoExtra_AV {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		iframe {
+			height: 30vh;
+		}
+		a{
+			img {
+				margin-left: 10%;
+				width: 80%;
+				height: auto;
+			}
+		}
+	}
+
+/* --------- mobile landscape ---------- */
+@media only screen and (min-width: 667px) {
+
+/* SECTION - generales: body, header, nav, footer*/
+    
+        /*header*/
+		header {
+			position: relative;
+			margin-bottom: -25px;
+		}
+
+        #toggle_btn {
+            margin-right: 4%;
+            margin-top: 1%;
+        }
+        
+        /*footer*/
+        footer {
+            p {
+                span {
+                    display: inline;
+                }
+            }
+        }
+
+/* SECTION - index.html */
+
+	/*main*/
+	#main_index {
+		background-image: url("../images/banners/indexFondo.jpg");
+		section {
+			margin-top: 4%;
+			margin-left: 20%;
+			margin-right: 20%;
+			p {
+				&:nth-child(4) {
+					margin-bottom: 5%;
+				}
+			}
+		}
+	}
+
+
+/* SECTION - inicio.html */
+
+        /*main*/
+        #main_inicio {
+            margin-top: 10px;
+        }
+
+        /*recibidor*/
+        #recibidor_logo {
+            h1 {
+                margin-top: -2%;
+            }
+        }
+    
+        /*personajes*/
+        #personajes_grid {
+            display: flex;
+            flex-direction: row;
+            flex: nowrap;
+            justify-content: space-evenly;
+        }
+        
+        .personajes_child {
+            a {
+                img {
+                    max-height: 85vh;
+                }
+            }
+        }
+
+/* SECTION - personajes.html */
+
+	/*main*/
+	#main_personajes {
+		margin-top: 20px;
+	}
+
+	/*burbujas de personajes*/
+	.personajes_child_burbuja {
+		a {
+			img {
+				width: 150px;
+				height: 150px;
+			}
+		}
+	}
+
+/* SECTION - <nombre del personaje>.html */
+
+	/*personaje*/
+
+	.personajeInfo {
+		overflow-x:hidden;
+	}
+
+	.personajeInfo_texto {
+		div {
+			img {
+				margin: 0 20% 0 20%;
+				width: 60%;
+				border-radius: 25px;
+			}
+		}
+	}
+
+	.personajeInfo_grid {
+		display: grid;
+		grid-template-areas:
+		"fotoLateral" "infoPersonaje";
+		grid-template-columns: 1fr 4fr;
+		grid-template-rows: auto;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.historia {
+		grid-template-columns: 1fr;
+	}
+
+	.personaje_fotoLateral {
+		grid-area: "fotoLateral";
+		display: block;
+		img {
+			width: 100%!important;
+			height: 300px!important;
+			margin-left: 5px!important;
+		}
+	}
+
+	.personaje_fichaTecnica {
+		grid-area: "infoPersonaje";
+		summary {
+			cursor: text;
+		}
+	}
+
+/* SECTION - juegos.html */
+
+	/*main*/
+	#main_juegos {
+		img {
+			margin-top: 10%;
+			height: 70vh;
+			width: auto;
+			border-radius: 10%;
+		}
+		button {
+			margin-top: 5%;
+			margin-bottom: 5%;
+		}
+	}
+
+/* SECTION - extra.html */
+
+	/*main*/
+	#main_extras {
+		margin-top: 5%;
+	}
+
+	.contenidoExtra_AV {
+		iframe {
+			height: 70vh;
+		}
+	}
+    
+}
+
+/* --------- extra small mobile ---------- */
+@media only screen and (max-width: 400px) and (min-height: 720px) {
+
+/* SECTION - capitulos.html */
+
+	/*tablas de capitulos*/
+
+	.muyLargoPara360px {
+		font-size: 15px;
+	}
+
+/* SECTION - personajes.html */
+
+	/*burbujas de personajes*/
+
+	.personajes_child_burbuja {
+		a {
+			img {
+				width: 80px;
+				height: 80px;
+			}
+		}
+	}
+
+/* SECTION - juegos.html */
+
+	/*main*/
+	#main_juegos {
+		button {
+			margin-top: 30%;
+		}
+	}
+
+}
+
+
+/* --------- tablet portrait ------------------ */
+@media only screen and (min-width: 768px) {
+
+/* SECTION - inicio.html */
+
+	/*main*/
+	#main_index {
+		background-image: url("../images/banners/indexFondo2.jpg");
+		section {
+			margin-top: 25%;
+			margin-left: 10%;
+			margin-right: 10%;
+			p {
+				font-size: 50px;
+				&:nth-child(4) {
+					margin-bottom: 40%;
+				}
+			}
+			a {
+				button {
+					font-size: 30px;
+				}
+			}
+		}
+	}
+
+
+/* SECTION - inicio.html */
+
+	/*recibidor*/
+	#recibidor_img_container {
+		margin-top: -10px;
+	}
+
+	#navegar_sitio_btn {
+		display: none;
+	}
+
+
+	#recibidor {
+		margin-top: 0%;
+	}
+
+	/*personajes*/
+	#personajes {
+		height: auto;
+	}
+
+	/*contenidos extra*/
+
+
+	#logos_redes {
+		margin-left: 3%;
+		margin-right: 3%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.logo_red {
+		height: 90px;
+		width: 90px;
+	}
+
+/* SECTION - capitulos.html */
+
+	/*tablas de episodios*/
+
+	.capitulo_titulo {
+		margin-top: 6px;
+		li {
+			font-size: 25px;
+		}
+		&:after {
+			margin-top: 6px;
+		}
+	}
+
+	.active {
+		margin-top: -5px;
+	}
+
+	.capitulo_info {
+		margin-left: 30px;
+	}
+
+
+	.capitulo_img {
+		width: 10%;
+		display: flex;
+		justify-content: center;
+		align-self: flex-start;
+		img {
+			height: 100px;
+			width: 100px;
+			border-radius: 50%;
+			&:hover {
+				transform: scale(2);
+			}
+		}
+	}
+
+
+	.capitulo_ver_online {
+		div {
+			justify-content: left;
+			margin-left: -5%;
+			a {
+				margin-left: 5%;
+				img {
+					height: 50px;
+					width: 50px;
+					&:hover {
+						transform: scale(1.2);
+					}
+				}
+			}
+		}
+	}
+
+/* SECTION - <nombre del personaje>.html */
+
+	/*personaje*/
+	.personajeInfo_texto_cita {
+		font-size: 25px!important;
+	}
+
+/* SECTION - juegos.html */
+
+	/*main*/
+	#main_juegos {
+		img {
+			height: 50vh;
+		}
+	}
+
+/* SECTION - extra.html */
+
+	.contenidoExtra_AV {
+		margin-top: 5%;
+		iframe {
+			height: 30vh;
+			width: 80vw;
+		}
+	}
+    
+}
+
+/* --------- tablet landscape ------------------ */
+@media only screen and (min-width: 1024px) {
+
+/* SECTION - generales: body, header, nav, footer*/
+
+    /*header*/
+	header {
+		position: static;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-top: -20px;
+		margin-bottom: -35px;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: row;
+		font-size: 23px;
+		ul {
+			li {
+				padding-right: 20px;
+				ul {
+					li {
+						font-size: 23px;
+					}
+				}
+			}
+		}
+	}
+
+    #navbarSupportedContent {
+        background-color: inherit;
+        margin: 0;
+        border-radius: 0%;
+    }
+
+    #navbar_ul {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+	#navbar_submenu {
+		li {
+			hr {
+				margin-left: 10%;
+			}
+		}
+	}
+
+	#logo_header {
+		display: none;
+	}
+ 
+/* SECTION - inicio.html */
+
+	/*main*/
+	#main_index {
+		background-image: url("../images/banners/indexFondo.jpg");
+		section {
+			margin-top: 5%;
+			p {
+				font-size: 60px;
+				&:nth-child(4) {
+					margin-bottom: 20%;
+				}
+			}
+			a {
+				button {
+					font-size: 35px;
+				}
+			}
+		}
+	}
+
+/* SECTION - inicio.html */
+
+    /*main*/
+	#main_inicio {
+		margin: 0px 3% 10px 3%;
+		display: grid;
+		grid-template-areas: "banner banner banner banner" "personajes personajes personajes personajes" "recibidor recibidor contenido_extra contenido_extra" "capitulos capitulos contenido_extra contenido_extra";
+		grid-template-rows: auto;
+		grid-template-columns: auto;
+		grid-column-gap: 10px;
+		grid-row-gap: 50px;
+	}
+	.main_child {
+		height: auto;
+		width: 100%;
+	}
+
+	/*recibidor*/
+	#recibidor_img_container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		img {
+			margin-top: 25px;
+			height: 85vh;
+			width: 90vw;
+		}
+	}
+
+	#navegar_sitio_btn_2 {
+		display: block;
+		margin-top: -25px;
+		a {
+			text-decoration: none;
+			color: #fafafa;
+		}
+	}
+
+/* SECTION - personajes.html */
+
+	/*main*/
+
+	#main_personajes {
+		margin-top: 30px;
+	}
+
+	/*burbujas de personajes*/
+
+	.seccionPersonajes {
+		margin-bottom: 30px;
+		p {
+			font-size: 20px;
+			margin-bottom: 30px!important;
+		}
+	}
+
+	.personajes_child_burbuja {
+		font-size: 25px;
+		a {
+			img {
+				width: 200px;
+				height: 200px;
+			}
+		}
+	}
+
+/* SECTION - <nombre del personaje>.html */
+
+	/*personaje*/
+
+	.personajeInfo_texto {
+		div {
+			img {
+				height: 300px;
+			}
+		}
+	}
+
+/* SECTION - extra.html */
+
+	/*main*/
+	#main_extras {
+		p {
+			text-align: center;
+			font-size: 20px;
+		}
+		h1 {
+			margin-bottom: 3%;
+		}
+	}
+
+	/*articulos*/
+	.contenidoExtra {
+		display: grid;
+		grid-template-areas: 
+		"audiovisual texto";
+		grid-template-columns: 1fr 1fr;
+		p {
+			font-size: initial!important;
+			text-align: justify!important;
+		}
+		h2 {
+			margin-bottom: 20px;
+		}
+	}
+
+	.contenidoExtra_info {
+		grid-area: texto;
+		margin-left: -5%;
+	}
+
+	.contenidoExtra_AV {
+		grid-area: audiovisual;
+		iframe {
+			margin-top: -5%;
+			width: 80%;
+			height: 300px;
+		}
+	}
+
+}
+
+/* --------- desktop ------------------ */
+@media only screen and (min-width: 1200px) {
+
+/* SECTION - generales: body, header, nav, footer*/
+
+    /*header*/
+	header {
+		position: static;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		width: 100%;
+		margin-top: -20px;
+		margin-bottom: -35px;
+	}
+	nav {
+		font-size: 25px;
+		ul {
+			li {
+				padding-right: 25px;
+				ul {
+					li {
+						font-size: 25px;
+					}
+				}
+			}
+		}
+	}
+    
+/* SECTION - inicio.html */
+
+	/*main*/
+	#main_index {
+		background-size: 100vw 100vh;
+		-webkit-text-stroke: 1px black;
+		section {
+			margin-top: 2%;
+			p {
+				&:nth-child(4) {
+					margin-bottom: 5%;
+				}
+			}
+			a {
+				button {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+
+/* SECTION - inicio.html */
+
+    /*main*/
+	
+	.main_child {
+		height: auto;
+		width: 100%;
+	}
+
+    /*recibidor*/
+	#recibidor_img_container {
+		width: 100%;
+		img {
+			margin-top: 10px;
+		}
+	}
+
+	#recibidor_logo {
+		h1 {
+			font-size: 100px;
+		}
+		h3 {
+			font-size: 75px;
+			span {
+				font-size: 55px;
+			}
+		}
+		h5 {
+			font-size: 30px;
+		}
+	}
+	#recibidor_texto {
+		p {
+			margin-left: 5%;
+			margin-right: 5%;
+			font-size: 30px;
+		}
+		h3 {
+			font-size: 50px;
+		}
+	}
+
+    /*personajes*/ 
+	
+	#personajes_subtitulo {
+		font-size: 60px;
+		margin-bottom: 1%;
+	}
+	.personajes_child {
+		a {
+			img {
+				max-height: 80vh;
+				filter: url(filters.svg#grayscale);
+				filter: gray;
+				-webkit-filter: grayscale(1);
+				-webkit-transition: all .8s ease-in-out;
+				&:hover {
+					filter: none;
+					-webkit-filter: grayscale(0);
+					-webkit-transform: scale(1.05);
+				}
+			}
+		}
+	}
+
+    /*capitulos*/
+	#capitulos {
+		h1 {
+			font-size: 50px;
+		}
+		p {
+			font-size: 30px;
+		}
+		margin-top: -10%;
+		img {
+			max-width: 90%;
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+	}
+
+    /*contenidos extra*/
+	#ver_contenidos {
+		h5 {
+			font-size: 30px;
+		}
+	}
+	#card_contenidos {
+		margin-top: 5%;
+	}
+	#contenidos {
+		margin-left: 3%;
+		font-size: 25px;
+		&:hover {
+			transform: scale(1.01);
+		}
+	}
+	#cita_santos {
+		font-size: 30px !important;
+	}
+	#autor_de_cita {
+		font-size: 30px;
+		margin-bottom: 3%;
+		margin-top: -1%;
+	}
+	#extra_hr {
+		display: none;
+	}
+	#seguinos {
+		height: 250px;
+		h1 {
+			margin-top: 50px;
+		}
+	}
+	#logos_redes {
+		margin-left: 3%;
+		margin-right: 3%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.logo_red {
+		margin-top: 30px;
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+
+/* SECTION - personajes.html */
+
+	/*burbujas de personajes*/
+
+	.seccionPersonajes {
+		margin-bottom: 50px;
+		p {
+			margin-left: 20%!important;
+			margin-right: 20%!important;
+		}
+	}
+
+	.personajes_child_achicar {
+		max-height: 62vh!important;
+	}
+
+/* SECTION - <nombre del personaje>.html */
+
+	/*personaje*/
+	.personajeInfo_header {
+		img {
+			height: 90vh;
+			position: relative;
+			top: 0;
+			left: 0;
+		}
+		button {
+			display: block;
+			position: absolute;
+			top: 80%;
+			left: 65%;
+			a {
+				color: #fafafa;
+				text-decoration: none;
+				&:hover {
+					color: #fafafa;
+				}
+			}
+		}
+	}
+
+	.personajeInfo_container {
+		padding-top: 30px;
+		padding-bottom: 20px;
+		margin: 0 10% 0 10%;
+		background-color: #fafafa;
+	}
+
+	.personaje_fotoLateral {
+		img {
+			display: block!important;
+			height: 360px!important;
+		}
+	}
+
+	.personajeInfo_texto {
+		div {
+			img {
+				display: none;
+			}
+			p, blockquote {
+				font-size: 20px;
+			}
+		}
+		summary {
+			font-size: 20px;
+		}
+	}
+
+	.personajeInfo_texto_ficha {
+		font-size: 20px;
+	}
+
+/* SECTION - juegos.html */
+
+	/*main*/
+	#main_juegos {
+		img {
+			margin-top: 5%;
+			width: 60vh;
+			height: 50vh;
+		}
+		h1 {
+			margin-top: 1%;
+		}
+		button {
+			margin-top: 1%;
+			width: 20%!important;
+		}
+	}
+
+/* SECTION - extra.html */
+
+	/*articulos*/
+	.contenidoExtra {
+		p {
+			font-size: 20px!important;
+		}
+	}
+
+}
+
+

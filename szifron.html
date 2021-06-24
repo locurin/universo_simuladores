@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!----------- HEAD --------------->
+<head>
+    <title>Damián Szifron</title>
+    <link rel="shortcut icon" href="images/iconos/icono_santos.jpg">
+    <!------- META ---------------->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Un sitio para los fanáticos de los Simuladores, la serie de culto creada por Telefe">
+    <meta name="keywords" content="simuladores, telefe, televisión, argentina, santos, lamponne, ravenna, medina">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- css / sass-->
+    <link href="css/styles.css"rel="stylesheet">
+    <!------- FRAMEWORKS ---------------->
+    <!-- animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- wow css-->
+    <link rel="stylesheet" href="plugins/WOW-master/css/libs/animate.css" type="text/css">
+    <!-- Bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">    
+    <!-- wow js-->
+    <script src="plugins/WOW-master/dist/wow.min.js"></script>
+    <script>
+                  wow = new WOW(
+                  {
+                  boxClass:     'wow',      // default
+                  animateClass: 'animated', // default
+                  offset:       0,          // default
+                  mobile:       false,       // default
+                  live:         true        // default
+                }
+                )
+                wow.init();
+    </script>
+</head>
+
+<!----------- BODY --------------->
+<body>
+
+  <!----------- HEADER --------------->
+  <header>
+      <!----------- BOOTSTRAP NAVBAR --------------->
+      <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <img class="navbar-left" src="images/banners/new_header.jpg" alt="logo de la web" title="web logo" id="logo_header">
+              <div>
+                  <button class="navbar-toggler" id="toggle_btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon" id="test"></span>
+                  </button>
+              </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto mb-2 mb-lg-0" id="navbar_ul">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="inicio.html">INICIO</a>
+                </li>
+                <li class="divisor_de_categorias"><hr class="dropdown-divider"></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="historia.html">HISTORIA </a>
+                </li>
+                <li class="divisor_de_categorias"><hr class="dropdown-divider"></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="personajes.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    PERSONAJES 
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="navbar_submenu">
+                    <li><a class="dropdown-item nav-link" href="ravenna.html">EMILIO RAVENNA</a></li>
+                    <li><a class="dropdown-item nav-link" href="medina.html">GABRIEL MEDINA</a></li>
+                    <li><a class="dropdown-item nav-link" href="santos.html">MARIO SANTOS</a></li>
+                    <li><a class="dropdown-item nav-link" href="lamponne.html">PABLO LAMPONNE</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item nav-link" href="personajes.html">VER TODOS</a></li>
+                  </ul>
+                </li>
+                <li class="divisor_de_categorias"><hr class="dropdown-divider"></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="capitulos.html">CAPÍTULOS </a>
+                </li>
+                <li class="divisor_de_categorias"><hr class="dropdown-divider"></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="personajes.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    CONTENIDO EXTRA 
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="navbar_submenu">
+                    <li><a class="dropdown-item nav-link" href="extra.html">AUDIOVISUALES</a></li>
+                    <li><a class="dropdown-item nav-link" href="juegos.html">JUEGOS</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+  </header>
+
+  <!----------- MAIN --------------->
+  <main id="main_personajes">
+
+    <!----------- personaje --------------->
+    <article class="personajeInfo">
+        <!----------- foto header --------------->
+        <section class="personajeInfo_header">
+            <img src="images/banners/szifronBanner.jpg" alt="foto de la brigada B" id="personaje_imagenSuperior">
+            <button class="btn btn-dark btn-lg" id="personajeInfo_header_btn"><a href="#estePersonaje">&#9660 &nbsp;&nbsp;Conoce a Damián Szifron &nbsp;&nbsp;&#9660</a></button>
+        </section>
+
+        <section class="personajeInfo_container" id="estePersonaje">
+            <!----------- info del personaje --------------->
+            <div class="personajeInfo_texto">
+                <div class="personajeInfo_grid">
+                    <!----------- foto lateral (solo pantallas grandes) --------------->
+                    <aside class="personaje_fotoLateral">
+                        <img src="images/personajes/szifron2.jpg" alt="foto de Damián Szifron" id="personaje_imagenLateral">
+                    </aside>
+                    <!----------- ficha técnica --------------->
+                    <div class="personaje_fichaTecnica">
+                        <h1>Damián Szifron</h1>
+                        <div class="personajeInfo_texto_ficha">
+                            <b>Ocupación:</b> Director de cine - Guionista<br>
+                            <b>Cumpleaños:</b> 9 de julio de 1975<br>
+                            <b>Nacionalidad:</b> Argentino hasta la muerte carajo<br>
+                        </div>
+                        <summary>
+                            Es un guionista y director argentino de cine y televisión, creador de la serie Los Simuladores (2002-2004). 
+                            Ha dirigido los largometrajes El fondo del mar (2003), Tiempo de valientes (2005) y Relatos salvajes (2014), película que se transformó en una de las más exitosas de Argentina en los últimos tiempos y fue candidata a numerosos premios, incluyendo al Óscar a la mejor película internacional y a la Palma de Oro en el Festival Internacional de Cine de Cannes.
+                         
+                        </summary>
+                    </div>
+                </div>
+                <!----------- biografía --------------->
+                <div class="personajeInfo_texto_biografia">
+                    <h2>Biografía</h2>
+                    <hr class="personaje_separador">
+                    <p> 
+                        Nacido el 9 de julio de 1975 en Ramos Mejía, Buenos Aires, su padre era amante del cine y
+                         su madre disfrutaba realizar trucos de magia. Szifron es de ascendencia judeo-polaca.
+                    </p>
+                    <p>
+                        Szifron cursó sus estudios secundarios en la Escuela Técnica ORT, dónde siguió la especialidad de Medios de Comunicación. 
+                        Más tarde estudió Teoría del Cine con Ángel Faretta —mítico crítico de la Revista Fierro—, y completó su formación con la carrera 
+                        de Dirección Cinematográfica en la Universidad del Cine.
+                    </p>
+                    <p>
+                        Szifron está en pareja con la actriz argentina María Marull, a quien conoció durante la filmación de la serie Atorrantes. 
+                        La pareja tiene dos hijas: Rosa, nacida en 2009,​ y Eva, nacida el 7 de julio de 2014.
+                    </p>
+                    <div>
+                        <img src="images/personajes/szifron4.jpg" alt="foto de Damián Szifron" title="Szifron habla de su película Relatos Salvajes (2011)">
+                      </div>
+                </div>
+                <!----------- filmografía --------------->
+                <div class="personajeInfo_texto_personalidad">
+                  <div>
+                      <h2>Filmografía como director:</h2>
+                      <hr class="personaje_separador">
+                      <p><b>PELÍCULAS:</b></p>
+                      <p>- El fondo del Mar (2003)</p>
+                      <p>- Tiempo de valientes (2005)</p>
+                      <p>- Relatos Salvajes (2011)</p>
+                      <p>- Misanthrope (TBD)</p>
+                      <hr>
+                      <p><b>TELEVISIÓN:</b></p>
+                      <p>- Los Simuladores (2002)</p>
+                      <p>- Hermanos y Detectives (2006)</p>
+                      <hr>
+                      <p><b>CORTOMETRAJES:</b></p>
+                      <p>- El tren (1992)</p>
+                      <p>- Río de culpas (1993)</p>
+                      <p>- Kan, el trueno (1997)</p>
+                      <p>- Punto muerto (1998)</p>
+                      <p>- Los últimos días (1999)</p>
+                  </div>
+                  <div>
+                    <img src="images/personajes/szifron3.jpg" alt="foto de Damián Szifron" title="Szifron habla de su película Relatos Salvajes (2011)">
+                  </div>
+                </div>
+                <!-----------curiosidades --------------->
+                <div class="personajeInfo_texto_curiosidades">
+                    <div>
+                        <h2>Curiosidades</h2>
+                        <hr class="personaje_separador">
+                        <p class="personajeCuriosidad"><b>»</b> Ha recibido gran número de premios y nominacioes a lo largo de su carrera, inclusive la nominación a mejor película extranjera en los premios Oscar 2012.</p>
+                        <p class="personajeCuriosidad"><b>»</b> Suele nombrar a sus persnajes en honor a personas que conoce, especialmente colaboradores de su equipo de producción. Por ejemplo, usa el nombre de Diego Crucitti (camarógrafo) para nombrar a dos personajes, uno en Los Simuladores (2002) y luego en Hermanos y Detectives (2006).</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="volverAVerTodos">
+                <button class="btn btn-dark btn-lg"><a href="personajes.html">Ver más personajes</a></button>
+            </div>
+        </section>
+        
+    </article>
+
+  </main>
+
+  <!----------- FOOTER --------------->
+  <footer><p>Sitio web creado sin fines de lucro por <a href="https://github.com/locurin">locurin</a>. <span>Los derechos de Los Simuladores © pertenecen a <a href="https://telefe.com/">Telefe</a>.</span></p></footer>
+  
+  <!----------- SCRIPTS --------------->
+  <!-- Bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+             
+  </body>
+</html>

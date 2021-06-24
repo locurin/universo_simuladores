@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!----------- HEAD --------------->
+<head>
+    <title>Emilio Ravenna</title>
+    <link rel="shortcut icon" href="images/iconos/icono_santos.jpg">
+    <!------- META ---------------->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Un sitio para los fanáticos de los Simuladores, la serie de culto creada por Telefe">
+    <meta name="keywords" content="simuladores, telefe, televisión, argentina, santos, lamponne, ravenna, medina">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- css / sass-->
+    <link href="css/styles.css"rel="stylesheet">
+    <!------- FRAMEWORKS ---------------->
+    <!-- animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- wow css-->
+    <link rel="stylesheet" href="plugins/WOW-master/css/libs/animate.css" type="text/css">
+    <!-- Bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">    
+    <!-- wow js-->
+    <script src="plugins/WOW-master/dist/wow.min.js"></script>
+    <script>
+                  wow = new WOW(
+                  {
+                  boxClass:     'wow',      // default
+                  animateClass: 'animated', // default
+                  offset:       0,          // default
+                  mobile:       false,       // default
+                  live:         true        // default
+                }
+                )
+                wow.init();
+    </script>
+</head>
+
+<!----------- BODY --------------->
+<body>
+
+  <!----------- HEADER --------------->
+  <header>
+      <!----------- BOOTSTRAP NAVBAR --------------->
+      <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <img class="navbar-left" src="images/banners/new_header.jpg" alt="logo de la web" title="web logo" id="logo_header">
+              <div>
+                  <button class="navbar-toggler" id="toggle_btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon" id="test"></span>
+                  </button>
+              </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto mb-2 mb-lg-0" id="navbar_ul">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="inicio.html">INICIO</a>
+                </li>
+                <li class="divisor_de_categorias"><hr class="dropdown-divider"></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="historia.html">HISTORIA </a>
+                </li>
+                <li class="divisor_de_categorias"><hr class="dropdown-divider"></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="personajes.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    PERSONAJES 
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="navbar_submenu">
+                    <li><a class="dropdown-item nav-link" href="ravenna.html">EMILIO RAVENNA</a></li>
+                    <li><a class="dropdown-item nav-link" href="medina.html">GABRIEL MEDINA</a></li>
+                    <li><a class="dropdown-item nav-link" href="santos.html">MARIO SANTOS</a></li>
+                    <li><a class="dropdown-item nav-link" href="lamponne.html">PABLO LAMPONNE</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item nav-link" href="personajes.html">VER TODOS</a></li>
+                  </ul>
+                </li>
+                <li class="divisor_de_categorias"><hr class="dropdown-divider"></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="capitulos.html">CAPÍTULOS </a>
+                </li>
+                <li class="divisor_de_categorias"><hr class="dropdown-divider"></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="personajes.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    CONTENIDO EXTRA 
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="navbar_submenu">
+                    <li><a class="dropdown-item nav-link" href="extra.html">AUDIOVISUALES</a></li>
+                    <li><a class="dropdown-item nav-link" href="juegos.html">JUEGOS</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+  </header>
+
+  <!----------- MAIN --------------->
+  <main id="main_personajes">
+
+    <!----------- personaje --------------->
+    <article class="personajeInfo">
+        <!----------- foto header --------------->
+        <section class="personajeInfo_header">
+            <img src="images/banners/ravennaBanner.jpg" alt="foto del personaje Emilio Ravenna" id="personaje_imagenSuperior">
+            <button class="btn btn-dark btn-lg" id="personajeInfo_header_btn"><a href="#estePersonaje">&#9660 &nbsp;&nbsp;Conoce a Emilio Ravenna &nbsp;&nbsp;&#9660</a></button>
+        </section>
+
+        <section class="personajeInfo_container" id="estePersonaje">
+            <!----------- info del personaje --------------->
+            <div class="personajeInfo_texto">
+                <div class="personajeInfo_grid">
+                    <!----------- foto lateral (solo pantallas grandes) --------------->
+                    <aside class="personaje_fotoLateral">
+                        <img src="images/personajes/ravenna.png" alt="foto del personaje Emilio Ravenna" id="personaje_imagenLateral">
+                    </aside>
+                    <!----------- ficha técnica --------------->
+                    <div class="personaje_fichaTecnica">
+                        <h1>Emilio Ravenna</h1>
+                        <blockquote class="personajeInfo_texto_cita">
+                            «Metete tu cumpleaños en el orto, pelotudo»
+                        </blockquote>
+                        <div class="personajeInfo_texto_ficha">
+                            <b>Ocupación:</b> Miembro de Los Simuladores - Caracterización<br>
+                            <b>Debut:</b> Temporada 1 - Episodio 1 - "Tarjeta de Navidad"<br>
+                            <b>Apariciones:</b> 24 capítulos<br>
+                            <b>Interpretado por:</b> <a href="https://es.wikipedia.org/wiki/Diego_Peretti" target="_blank">Diego Peretti</a><br>
+                        </div>
+                        <summary>
+                            Ravenna se ocupa de la Caracterización. Su papel en el grupo es realizar la mayoría de las caracterizaciones, o si no, interpretar al personaje clave del operativo. 
+                        </summary>
+                    </div>
+                </div>
+                <!----------- biografía --------------->
+                <div class="personajeInfo_texto_biografia">
+                    <h2>Biografía</h2>
+                    <hr class="personaje_separador">
+                    <p> 
+                       Se sabe poco poco de su pasado dado que no tiende a hablar de su vida personal. Se ha formado como un actor muy polifasético 
+                       y demuestra haber tenido una gran formación física. aparentemente, heredó de su madre su pasión por la actuación, aunque en varias
+                       ocasiones se lo ve renegando a causa de ella.
+                    </p>
+                </div>
+                <!----------- personalidad --------------->
+                <div class="personajeInfo_texto_personalidad">
+                    <div>
+                        <h2>Personalidad y Características</h2>
+                        <hr class="personaje_separador">
+                        <p>
+                            A diferencia del resto de sus compañeros, tiene una personalidad muy abierta, bastante despreocupada, y una vida sexual muy activa. 
+                            Convive con varias mujeres en su casa (aun así le cuesta mantener fidelidad con ellas), tiene tendencias artísticas (sabe de la materia)
+                            y no es raro verlo experimentando distintas actividades recreativas y deportivas. Su madre también suele participar en algunas misiones en papeles secundarios, 
+                            sobre todo durante la segunda temporada. 
+                        </p>
+                    </div>
+                </div>
+                <!----------- citas --------------->
+                <div class="personajeInfo_texto_citas">
+                    <h2>Citas</h2>
+                    <hr class="personaje_separador">
+                    <blockquote>«"De Minesotta solo vienen bueyes y maricones, y usted no es ningun buey"»<br><span> -T01xEP7</span></blockquote>
+                    <hr>
+                    <blockquote>«Si yo fuera rico ♫»<br> <span> -T02xEP06</span></blockquote>
+                    <hr>
+                    <blockquote>«Los planes de los políticos son más descabellados y la gente los vota»<br> <span> -T02xEP04</span></blockquote>
+                    <hr>
+                    <blockquote>«Admite usted haber abusado sexualmente de menores, dicho de otra manera ser un pederasta, más comúnmente llamado bufarra, bufarreta, bufarrón, sopapa, come niños, pimentero, valloneta, sacacorchos, cucurucho, banderino, chupete! »<br> <span> -T02xEP10</span></blockquote>
+                    <hr>
+                    <blockquote>«16 años trabajando y ¿como me pagan? Mandándome a la loma del orto con un sueldo en pesos... ¡¡¡EN PESOS!!!»<br> <span> -T02xEP11</span></blockquote>
+                    <hr>
+                </div>
+                <!-----------curiosidades --------------->
+                <div class="personajeInfo_texto_curiosidades">
+                    <h2>Curiosidades</h2>
+                    <hr class="personaje_separador">
+                    <p class="personajeCuriosidad"><b>»</b> En el capítulo La gargantilla de las cuatro estaciones se puede observar que es capaz de atrapar una mosca en el aire con un par de palillos chinos.</p>
+                    <p class="personajeCuriosidad"><b>»</b> El personaje interpretado por Diego Peretti lleva el nombre de "Emilio Ravenna" y utiliza el alias "Máximo Cozzetti", en homenaje al dietólogo Máximo Ravenna. </p>
+                    <p class="personajeCuriosidad"><b>»</b> Diego Peretti (Ravenna) actuó también en dos películas de Damian Szifrón: En el fondo del Mar (2003) y Tiempo de Valientes (2005)</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="volverAVerTodos">
+                <button class="btn btn-dark btn-lg"><a href="personajes.html">Ver más personajes</a></button>
+            </div>
+        </section>
+        
+    </article>
+
+  </main>
+
+  <!----------- FOOTER --------------->
+  <footer><p>Sitio web creado sin fines de lucro por <a href="https://github.com/locurin">locurin</a>. <span>Los derechos de Los Simuladores © pertenecen a <a href="https://telefe.com/">Telefe</a>.</span></p></footer>
+  
+  <!----------- SCRIPTS --------------->
+  <!-- Bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+             
+  </body>
+</html>

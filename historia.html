@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!----------- HEAD --------------->
+<head>
+    <title>Historia</title>
+    <link rel="shortcut icon" href="images/iconos/icono_santos.jpg">
+    <!------- META ---------------->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Un sitio para los fanáticos de los Simuladores, la serie de culto creada por Telefe">
+    <meta name="keywords" content="simuladores, telefe, televisión, argentina, santos, lamponne, ravenna, medina">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- css / sass-->
+    <link href="css/styles.css"rel="stylesheet">
+    <!------- FRAMEWORKS ---------------->
+    <!-- animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- wow css-->
+    <link rel="stylesheet" href="plugins/WOW-master/css/libs/animate.css" type="text/css">
+    <!-- Bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">    
+    <!-- wow js-->
+    <script src="plugins/WOW-master/dist/wow.min.js"></script>
+    <script>
+                  wow = new WOW(
+                  {
+                  boxClass:     'wow',      // default
+                  animateClass: 'animated', // default
+                  offset:       0,          // default
+                  mobile:       false,       // default
+                  live:         true        // default
+                }
+                )
+                wow.init();
+    </script>
+</head>
+
+<!----------- BODY --------------->
+<body>
+
+  <!----------- HEADER --------------->
+  <header>
+      <!----------- BOOTSTRAP NAVBAR --------------->
+      <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <img class="navbar-left" src="images/banners/new_header.jpg" alt="logo de la web" title="web logo" id="logo_header">
+              <div>
+                  <button class="navbar-toggler" id="toggle_btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon" id="test"></span>
+                  </button>
+              </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto mb-2 mb-lg-0" id="navbar_ul">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="inicio.html">INICIO</a>
+                </li>
+                <li class="divisor_de_categorias"><hr class="dropdown-divider"></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="historia.html">HISTORIA </a>
+                </li>
+                <li class="divisor_de_categorias"><hr class="dropdown-divider"></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="personajes.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    PERSONAJES 
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="navbar_submenu">
+                    <li><a class="dropdown-item nav-link" href="ravenna.html">EMILIO RAVENNA</a></li>
+                    <li><a class="dropdown-item nav-link" href="medina.html">GABRIEL MEDINA</a></li>
+                    <li><a class="dropdown-item nav-link" href="santos.html">MARIO SANTOS</a></li>
+                    <li><a class="dropdown-item nav-link" href="lamponne.html">PABLO LAMPONNE</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item nav-link" href="personajes.html">VER TODOS</a></li>
+                  </ul>
+                </li>
+                <li class="divisor_de_categorias"><hr class="dropdown-divider"></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="capitulos.html">CAPÍTULOS </a>
+                </li>
+                <li class="divisor_de_categorias"><hr class="dropdown-divider"></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="personajes.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    CONTENIDO EXTRA 
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="navbar_submenu">
+                    <li><a class="dropdown-item nav-link" href="extra.html">AUDIOVISUALES</a></li>
+                    <li><a class="dropdown-item nav-link" href="juegos.html">JUEGOS</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+  </header>
+
+  <!----------- MAIN --------------->
+  <main id="main_personajes">
+
+    <!----------- personaje --------------->
+    <article class="personajeInfo">
+        <!----------- foto header --------------->
+        <section class="personajeInfo_header">
+            <img src="images/banners/simuladoresBanner.jpg" alt="foto de los simuladores" id="personaje_imagenSuperior">
+            <button class="btn btn-dark btn-lg" id="personajeInfo_header_btn"><a href="#estePersonaje">&#9660 &nbsp;&nbsp;Conoce a Los Simuladores &nbsp;&nbsp;&#9660</a></button>
+        </section>
+        <section class="personajeInfo_container" id="estePersonaje">
+            <!----------- info del personaje --------------->
+            <div class="personajeInfo_texto">
+                <div class="personajeInfo_grid historia">
+                    <!----------- ficha técnica --------------->
+                    <div class="personaje_fichaTecnica">
+                        <h1>Los Simuladores</h1>
+                        <blockquote class="personajeInfo_texto_cita">
+                            « Conozco un grupo de personas que resuelve problemas. Problemas que nadie más puede resolver »
+                        </blockquote>
+                        <div class="personajeInfo_texto_ficha">
+                            <b>Creado por:</b> <a href="szifron.html">Damián Szifrón</a><br>
+                            <b>Primera emisión:</b> 20 de marzo de 2002<br>
+                            <b>Cantidad de capítulos:</b> 24<br>
+                            <b>Medio:</b> <a href="https://telefe.com" target="_blank">Telefe</a><br>
+                            <b>Canción apertura:</b> <a href="https://www.youtube.com/watch?v=2kL-m0joy-o" target="_blank">Cité Tango</a> (por Astor Piazolla)<br>
+                        </div>
+                        <summary>
+                          Los simuladores es una serie de televisión argentina cuya trama gira en torno a la vida de cuatro socios que, mediante operativos de simulacro sofisticados, 
+                          «resuelven los problemas de gente común». 
+                        </summary>
+                    </div>
+                </div>
+                <!----------- info general de la serie --------------->
+                <div class="personajeInfo_texto_biografia">
+                    <h2>Generales</h2>
+                    <hr class="personaje_separador">
+                    <p> 
+                      La serie se emitió en Argentina por el canal de televisión Telefe en dos temporadas; 
+                      la primera en 2002 y la segunda en 2003, aunque su capítulo final fue emitido en los primeros días de 2004,​ 
+                      obteniendo altísimos niveles de audiencia.2​3​ Este acompañamiento del público le valió a la serie la obtención del Premio Martín Fierro de Oro 2002, 
+                      entregado por la Asociación de Periodistas de la Televisión y la Radiofonía Argentinas (APTRA). Debido al éxito, se realizaron cuatro remakes, 
+                      en Chile, España, México y Rusia. Además, esta serie se emitió por vía web en las plataformas de Netflix y YouTube, así como también en el portal de internet de Telefe. 
+                      Es considerada en ocasiones como «la mejor serie argentina de todos los tiempos
+                    </p>
+                </div>
+                <!----------- trama --------------->
+                <div class="personajeInfo_texto_personalidad">
+                  <div>
+                      <h2>Trama</h2>
+                      <hr class="personaje_separador">
+                      <p>
+                        La serie está basada en un grupo de cuatro socios o colegas que se dedican al negocio de la simulación, operando desde el año 1989 y resolviendo los problemas y 
+                        necesidades de sus clientes mediante lo que ellos denominan "operativos de simulacro", que suelen consistir en engañar a quienes generan los problemas de sus clientes, 
+                        ya fueran jefes, criminales, esposas, viudas, comerciantes inescrupulosos, etcétera. 
+                      </p>
+                      <p> 
+                        Realizan un proceso basado en el método científico, el descubrimiento del problema, planteamiento de hipótesis, conjeturas y refutaciones, investigaciones de las partes tanto del cliente como de la parte que da el problema, y siempre buscan su punto conflictivo. Utilizan tácticas y métodos propios del derecho, la psicología, el teatro, la sociología, entre otros. 
+                      </p>
+                  </div>
+                </div>
+                <!----------- características --------------->
+                <div class="personajeInfo_texto_personalidad">
+                  <div>
+                      <h2>Características</h2>
+                      <hr class="personaje_separador">
+                      <p>
+                        La motivación de Los simuladores no es altruista, no pretenden cambiar el mundo sino dar un servicio útil a la gente; normalmente cobran a sus clientes exactamente el doble del costo del operativo, por la logística y la mano de obra, 
+                        cosa que Santos oportunamente informa al cliente, excepto en los casos en que el plan contempla el pago del operativo, y además comprometen a sus clientes a ayudarlos en futuros operativos de simulación (esto hace que personajes de capítulos anteriores 
+                        vuelvan a aparecer en capítulos siguientes como actores secundarios en papeles de ayuda a Los simuladores, dando así un sentido de continuidad a la serie). En el capítulo final de la serie, Santos define al equipo como un grupo de justicia paralela.
+                      </p>
+                      <p> 
+                        En la serie hay referencias a los libros de Sherlock Holmes (de Arthur Conan Doyle), a Los árboles mueren de pie (de Alejandro Casona), a Misión: Imposible, y a las películas Casablanca, El golpe y El Padrino. Su filosofía se puede encontrar en Parker Pyne investiga (de Agatha Christie).
+                        Además, hay claras alusiones a programas de acción estadounidenses como Stingray, The A-Team, Vengeance Unlimited y The Equalizer.
+                      </p>
+                  </div>
+                </div>
+                <!-----------curiosidades --------------->
+                <div class="personajeInfo_texto_curiosidades">
+                    <div>
+                        <h2>Curiosidades</h2>
+                        <hr class="personaje_separador">
+                        <p class="personajeCuriosidad"><b>»</b> Los nombres de los cuatro integrantes de "Los Simuladores" están inspirados en los profesores universitarios del director de la serie, Damián Szifrón.</p>
+                        <p class="personajeCuriosidad"><b>»</b> Cuando Los simuladores son contactados por Santos, sus teléfonos celulares suenan con la música que también abre el programa, "Cité Tango", original de Astor Piazzolla, aunque en el show se usa la versión de Gotan Project. </p>
+                        <p class="personajeCuriosidad"><b>»</b> Originariamente, el grupo estaba conformado por cuatro integrantes varones y una mujer, pero esto se cambió antes de grabar el episodio piloto. </p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="volverAVerTodos">
+                <button class="btn btn-dark btn-lg"><a href="inicio.html">Volver al Inicio</a></button>
+            </div>
+        </section>
+        
+    </article>
+
+  </main>
+
+  <!----------- FOOTER --------------->
+  <footer><p>Sitio web creado sin fines de lucro por <a href="https://github.com/locurin">locurin</a>. <span>Los derechos de Los Simuladores © pertenecen a <a href="https://telefe.com/">Telefe</a>.</span></p></footer>
+  
+  <!----------- SCRIPTS --------------->
+  <!-- Bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+             
+  </body>
+</html>

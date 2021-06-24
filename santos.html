@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!----------- HEAD --------------->
+<head>
+    <title>Mario Santos</title>
+    <link rel="shortcut icon" href="images/iconos/icono_santos.jpg">
+    <!------- META ---------------->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Un sitio para los fanáticos de los Simuladores, la serie de culto creada por Telefe">
+    <meta name="keywords" content="simuladores, telefe, televisión, argentina, santos, lamponne, ravenna, medina">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- css / sass-->
+    <link href="css/styles.css"rel="stylesheet">
+    <!------- FRAMEWORKS ---------------->
+    <!-- animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- wow css-->
+    <link rel="stylesheet" href="plugins/WOW-master/css/libs/animate.css" type="text/css">
+    <!-- Bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">    
+    <!-- wow js-->
+    <script src="plugins/WOW-master/dist/wow.min.js"></script>
+    <script>
+                  wow = new WOW(
+                  {
+                  boxClass:     'wow',      // default
+                  animateClass: 'animated', // default
+                  offset:       0,          // default
+                  mobile:       false,       // default
+                  live:         true        // default
+                }
+                )
+                wow.init();
+    </script>
+</head>
+
+<!----------- BODY --------------->
+<body>
+
+  <!----------- HEADER --------------->
+  <header>
+      <!----------- BOOTSTRAP NAVBAR --------------->
+      <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <img class="navbar-left" src="images/banners/new_header.jpg" alt="logo de la web" title="web logo" id="logo_header">
+              <div>
+                  <button class="navbar-toggler" id="toggle_btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon" id="test"></span>
+                  </button>
+              </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto mb-2 mb-lg-0" id="navbar_ul">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="inicio.html">INICIO</a>
+                </li>
+                <li class="divisor_de_categorias"><hr class="dropdown-divider"></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="historia.html">HISTORIA </a>
+                </li>
+                <li class="divisor_de_categorias"><hr class="dropdown-divider"></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="personajes.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    PERSONAJES 
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="navbar_submenu">
+                    <li><a class="dropdown-item nav-link" href="ravenna.html">EMILIO RAVENNA</a></li>
+                    <li><a class="dropdown-item nav-link" href="medina.html">GABRIEL MEDINA</a></li>
+                    <li><a class="dropdown-item nav-link" href="santos.html">MARIO SANTOS</a></li>
+                    <li><a class="dropdown-item nav-link" href="lamponne.html">PABLO LAMPONNE</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item nav-link" href="personajes.html">VER TODOS</a></li>
+                  </ul>
+                </li>
+                <li class="divisor_de_categorias"><hr class="dropdown-divider"></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="capitulos.html">CAPÍTULOS </a>
+                </li>
+                <li class="divisor_de_categorias"><hr class="dropdown-divider"></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="personajes.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    CONTENIDO EXTRA 
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="navbar_submenu">
+                    <li><a class="dropdown-item nav-link" href="extra.html">AUDIOVISUALES</a></li>
+                    <li><a class="dropdown-item nav-link" href="juegos.html">JUEGOS</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+  </header>
+
+  <!----------- MAIN --------------->
+  <main id="main_personajes">
+
+    <!----------- personaje --------------->
+    <article class="personajeInfo">
+        <!----------- foto header --------------->
+        <section class="personajeInfo_header">
+            <img src="images/banners/santosBanner.jpg" alt="foto del personaje Mario Santos" id="personaje_imagenSuperior">
+            <button class="btn btn-dark btn-lg" id="personajeInfo_header_btn"><a href="#estePersonaje">&#9660 &nbsp;&nbsp;Conoce a Mario Santos &nbsp;&nbsp;&#9660</a></button>
+        </section>
+        <section class="personajeInfo_container" id="estePersonaje">
+            <!----------- info del personaje --------------->
+            <div class="personajeInfo_texto">
+                <div class="personajeInfo_grid">
+                    <!----------- foto lateral (solo pantallas grandes) --------------->
+                    <aside class="personaje_fotoLateral">
+                        <img src="images/personajes/santos.png" alt="foto del personaje Mario Santos" id="personaje_imagenLateral">
+                    </aside>
+                    <!----------- ficha técnica --------------->
+                    <div class="personaje_fichaTecnica">
+                        <h1>Mario Santos</h1>
+                        <blockquote class="personajeInfo_texto_cita">
+                            « Disculpe... ¿Fuego tiene? »
+                        </blockquote>
+                        <div class="personajeInfo_texto_ficha">
+                            <b>Ocupación:</b> Líder de los Simuladores - Logística y Planificación<br>
+                            <b>Debut:</b> Temporada 1 - Episodio 1 - "Tarjeta de Navidad"<br>
+                            <b>Apariciones:</b> 24 capítulos<br>
+                            <b>Interpretado por:</b> <a href="https://es.wikipedia.org/wiki/Federico_D%27El%C3%ADa" target="_blank">Federico D'elía</a><br>
+                        </div>
+                        <summary>
+                            Santos es el protagonista principal de la serie Los Simuladores y el líder de la organización secreta con el mismo nombre. 
+                            Además de su función como líder del grupo, es también el encargado de contactar con los nuevos clientes mediante clientes anteriores. 
+                        </summary>
+                    </div>
+                </div>
+                <!----------- biografía --------------->
+                <div class="personajeInfo_texto_biografia">
+                    <h2>Biografía</h2>
+                    <hr class="personaje_separador">
+                    <p> 
+                        Mario Santos nació con el nombre de Francisco De Aguirre en 1963, hijo de Marcos De Aguirre, escritor que solo pudo publicar un libro, 
+                        El mentiroso de la Montaña. Francisco fue testigo del suicidio de su padre por una sobredosis cuando era muy joven, 
+                        debido a que Marcos estaba hasta el cuello de deudas que no podía pagar. Para salvar a su madre de los acreedores, Francisco utilizó el arte del engaño, 
+                        en el que era muy habilidoso, y todos los acreedores dejaron en paz a la familia destrozada.
+                    </p>
+                    <p>
+                        Estuvo brevemente casado con  Victoria Lindt, la cual falleció poco después de la madre de Francisco, en 1997. 
+                        Habiendo quedado sin ninguna familia cercana, Francisco se cambió el nombre a Mario Santos, protagonista de la novela que escribió su padre.
+                        Al comienzo de la serie tiene treinta y ocho años de edad, cumple treinta y nueve en el episodio "Fuera de cálculo" de la primera temporada 
+                        y se confirma que tiene cuarenta en "Los cuatro notables" de la segunda. 
+                        
+                    </p>
+                </div>
+                <!----------- personalidad --------------->
+                <div class="personajeInfo_texto_personalidad">
+                  <div>
+                      <h2>Personalidad y Características</h2>
+                      <hr class="personaje_separador">
+                      <p>
+                          Se muestra generalmente tranquilo y sereno, perdiendo rara vez la calma, incluso estando a punta de pistola en diversas ocasiones, 
+                          fue capaz de emplear el engaño para librarse de sus problemas. Se lo ve fumando un habano después de resolver cada operativo, pidiéndoles fuego a las victimas del mismo. 
+                      </p>
+                      <p> 
+                          En los operativos, Santos adopta el nombre de León Stofenmacher. Sólo se lo ve teniendo un fugaz encuentro amoroso con una secretaria de un banco en el episodio "Fuera de cálculo". 
+                          Luego de que los Simuladores decidieran separarse por un tiempo, Santos es el único que no tiene una imagen de su futuro y decide, simplemente, descansar.
+                      </p>
+                  </div>
+                  
+                </div>
+                <!----------- citas --------------->
+                <div class="personajeInfo_texto_citas">
+                    <h2>Citas</h2>
+                    <hr class="personaje_separador">
+                    <blockquote>«Disculpe... ¿Fuego tiene?»<br> <span> -T01xEP01</span></blockquote>
+                    <hr>
+                    <blockquote>«Primero planificamos un operativo, inmediatamente después lo presupuestamos. Y de ese presupuesto usted pagaría exactamente el doble por la logística y la mano de obra»<br> <span> -T01xEP01</span></blockquote>
+                    <hr>
+                    <blockquote>«Hoy por hoy si te queres rebelar tenes que usar saco y corbata»<br> <span> -T02xEP09</span></blockquote>
+                    <hr>
+                    <blockquote>«Odio trabajar con la presión del tiempo, me deprimen los límites»<br> <span> -T01xEP13</span></blockquote>
+                    <hr>
+                    <blockquote>«Existiendo la porcelana, las cosas de cerámica me angustian.»<br> <span> -T02xEP03</span></blockquote>
+                    <hr>
+                    <blockquote>«En lo personal es difícil el momento de la renuncia. ¿Por qué dejar de resolver problemas, sabiendo que uno tiene ese don?»<br> <span> -T02xEP11</span></blockquote>
+                    <hr>
+                </div>
+                <!-----------curiosidades --------------->
+                <div class="personajeInfo_texto_curiosidades">
+                    <div>
+                        <h2>Curiosidades</h2>
+                        <hr class="personaje_separador">
+                        <p class="personajeCuriosidad"><b>»</b> Mario Santos, el nombre del personaje que interpreta Federico D´Elía, es realmente el nombre del administrador de la Universidad de Cine, universidad en la que estudió Damián Szifrón</p>
+                        <p class="personajeCuriosidad"><b>»</b> El actor que interpreta a Feller, Jorge D'Elía es, en la vida real, el padre de Federico D'Elía (Santos).</p>
+                        <p class="personajeCuriosidad"><b>»</b> En la versión española de la serie, Mario Santos también es interpretado por Federico D'elía.</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="volverAVerTodos">
+                <button class="btn btn-dark btn-lg"><a href="personajes.html">Ver más personajes</a></button>
+            </div>
+        </section>
+        
+    </article>
+
+  </main>
+
+  <!----------- FOOTER --------------->
+  <footer><p>Sitio web creado sin fines de lucro por <a href="https://github.com/locurin">locurin</a>. <span>Los derechos de Los Simuladores © pertenecen a <a href="https://telefe.com/">Telefe</a>.</span></p></footer>
+  
+  <!----------- SCRIPTS --------------->
+  <!-- Bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+             
+  </body>
+</html>
